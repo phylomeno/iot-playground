@@ -1,6 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorSimulator", "SensorSimulator\SensorSimulator.csproj", "{5E1FBAB2-2BEC-494D-884F-AF8379D0CF82}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceSimulator", "DeviceSimulator\DeviceSimulator.csproj", "{5E1FBAB2-2BEC-494D-884F-AF8379D0CF82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Device", "Device", "{DDF3C6C5-9E35-4FDF-BC6E-BD9C996CFE9C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{3CC35DBA-67D6-422A-BF84-A9A637AF7336}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{0676C45F-C98E-42CB-BD42-5E836C7366D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +18,8 @@ Global
 		{5E1FBAB2-2BEC-494D-884F-AF8379D0CF82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E1FBAB2-2BEC-494D-884F-AF8379D0CF82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E1FBAB2-2BEC-494D-884F-AF8379D0CF82}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5E1FBAB2-2BEC-494D-884F-AF8379D0CF82} = {DDF3C6C5-9E35-4FDF-BC6E-BD9C996CFE9C}
 	EndGlobalSection
 EndGlobal
