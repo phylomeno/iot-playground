@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Backend.Tests\Usings.cs" />
+      <Compile Remove="Backend.Tests\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Backend.Tests\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Backend.Tests\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="Backend.Tests\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Backend.Tests\obj\Backend.Tests.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="Backend.Tests\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="Backend.Tests\obj\project.packagespec.json" />
+    </ItemGroup>
+
+</Project>
